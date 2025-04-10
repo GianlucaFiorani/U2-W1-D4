@@ -1,0 +1,79 @@
+body {
+  background-color: #666666;
+}
+h1 {
+  font-size: 2rem;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.box {
+  width: 250px;
+  height: 250px;
+}
+.postit {
+  width: 250px;
+  height: 200px;
+  margin: 1rem;
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 30%);
+  transition: 500ms;
+  animation: fadeIn 4s;
+}
+.postit:hover {
+  transform: rotate(0);
+  width: 350px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.palegreen {
+  background-color: palegreen;
+}
+
+.palegoldenrod {
+  background-color: palegoldenrod;
+}
+
+.plum {
+  background-color: plum;
+}
+main {
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 27px;
+  justify-content: center;
+  align-content: center;
+}
+main .box div:first-of-type {
+  transform: rotate(15deg);
+}
+
+main .box div:nth-of-type(2) {
+  transform: rotate(-13deg);
+}
+
+main .box div:nth-of-type(3) {
+  transform: rotate(-3deg);
+}
+main div:nth-of-type(4) {
+  transform: rotate(17deg);
+}
+main div:nth-of-type(5) {
+  transform: rotate(-5deg);
+}
+main div:nth-of-type(6) {
+  transform: rotate(-3deg);
+}
+main div:nth-of-type(7) {
+  transform: rotate(15deg);
+}
+main div:nth-of-type(8) {
+  transform: rotate(-10deg);
+}
