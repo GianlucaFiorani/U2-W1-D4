@@ -28,52 +28,30 @@ h1 {
 .postit:hover {
   transform: rotate(0);
   width: 350px;
-  height: 300px;
+  height: 280px;
+  box-shadow: 20px 20px 10px rgb(0 0 0 / 40%);
   position: relative;
   z-index: 1;
 }
 .palegreen {
   background-color: palegreen;
+  transform: rotate(15deg);
 }
 
 .palegoldenrod {
   background-color: palegoldenrod;
+  transform: rotate(-7deg);
 }
 
 .plum {
   background-color: plum;
+  transform: rotate(10deg);
 }
 main {
   display: flex;
   margin-top: 3rem;
   flex-wrap: wrap;
-  gap: 27px;
+  gap: 36px;
   justify-content: center;
   align-content: center;
-}
-main .box div:first-of-type {
-  transform: rotate(15deg);
-}
-
-main .box div:nth-of-type(2) {
-  transform: rotate(-13deg);
-}
-
-main .box div:nth-of-type(3) {
-  transform: rotate(-3deg);
-}
-main div:nth-of-type(4) {
-  transform: rotate(17deg);
-}
-main div:nth-of-type(5) {
-  transform: rotate(-5deg);
-}
-main div:nth-of-type(6) {
-  transform: rotate(-3deg);
-}
-main div:nth-of-type(7) {
-  transform: rotate(15deg);
-}
-main div:nth-of-type(8) {
-  transform: rotate(-10deg);
 }
