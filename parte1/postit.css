@@ -1,15 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 body {
   background-color: #666666;
 }
 h1 {
+  font-family: "Caveat", cursive;
   font-size: 2rem;
+  padding: 2rem;
+}
+
+::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #cecccc;
+  font-size: 1rem;
 }
 @keyframes fadeIn {
   from {
+    scale: 3;
     opacity: 0;
   }
 
   to {
+    scale: 1;
     opacity: 1;
   }
 }
@@ -23,10 +34,10 @@ h1 {
   margin: 1rem;
   box-shadow: 10px 10px 10px rgb(0 0 0 / 30%);
   transition: 500ms;
-  animation: fadeIn 4s;
+  animation: fadeIn 0.7s ease-in backwards;
 }
 .postit:hover {
-  transform: rotate(0);
+  transform: rotate(0) !important;
   width: 350px;
   height: 280px;
   box-shadow: 20px 20px 10px rgb(0 0 0 / 40%);
@@ -35,18 +46,16 @@ h1 {
 }
 .palegreen {
   background-color: palegreen;
-  transform: rotate(15deg);
 }
 
 .palegoldenrod {
   background-color: palegoldenrod;
-  transform: rotate(-7deg);
 }
 
 .plum {
   background-color: plum;
-  transform: rotate(10deg);
 }
+
 main {
   display: flex;
   margin-top: 3rem;
@@ -54,4 +63,18 @@ main {
   gap: 36px;
   justify-content: center;
   align-content: center;
+}
+#text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#postitText {
+  padding: 0.5rem;
+  background-color: #666666;
+}
+
+#postitText:focus {
+  outline: none;
+  color: #cecccc;
 }
